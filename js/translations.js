@@ -116,11 +116,11 @@ function updateLanguageSelector(language) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    const language = localStorage.getItem('language') || 'en';
+    const language = localStorage.getItem('language') || 'ua';
     setLanguage(language);
 });
 
 function getTranslation(key) {
-    const language = localStorage.getItem('language') || 'en';
+    const language = localStorage.getItem('language') || 'ua';
     return translations[language][key] || key;
 }
