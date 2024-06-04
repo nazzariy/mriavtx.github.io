@@ -202,7 +202,7 @@ vtxtable powervalues 0 1 2 3 4
 vtxtable powerlabels 250 500 1000 2000 3000`;        
 
 } else if (template === 'raceranger') { 
-    document.getElementById('power-state-1').value = '0';
+    document.getElementById('power-state-1').value = '1';
     document.getElementById('power-state-2').value = '2';
     document.getElementById('power-state-3').value = '4';
     document.getElementById('port-select').value = '0';
@@ -219,7 +219,7 @@ vtxtable powervalues 0 1 2 3
 vtxtable powerlabels 200 400 800 1600`;        
 
 } else if (template === 'dominator') { 
-    document.getElementById('power-state-1').value = '0';
+    document.getElementById('power-state-1').value = '1';
     document.getElementById('power-state-2').value = '2';
     document.getElementById('power-state-3').value = '4';
     document.getElementById('port-select').value = '0';
