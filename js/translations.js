@@ -50,7 +50,7 @@ const translations = {
         aux_select: "AUX керування VTX",
         vtx_template: "Шаблон VTX",
         vtx_serial_port: "Серійний порт VTX",
-        vtx_protocol: "Протокол VTX",
+        vtx_protocol: "Протокол керування VTX",
         power_state_1: "Потужність 1",
         power_state_2: "Потужність 2",
         power_state_3: "Потужність 3",
