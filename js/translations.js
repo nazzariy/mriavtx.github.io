@@ -46,7 +46,7 @@ const translations = {
 
     },
     uk: {
-        title: "Генератор конфігурації VTX",
+        title: "Конфігуратор VTX",
         aux_select: "AUX керування VTX",
         vtx_template: "Шаблон VTX",
         vtx_serial_port: "Серійний порт VTX",
