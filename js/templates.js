@@ -186,7 +186,7 @@ vtxtable powerlabels 25 400 800 1.5 2.5 0MW`;
 
 }
 ////////////////////////
-else if (template === 'AKK') { 
+else if (template === 'longrange') { 
     document.getElementById('power-state-1').value = '1';
     document.getElementById('power-state-2').value = '4';
     document.getElementById('power-state-3').value = '5';
