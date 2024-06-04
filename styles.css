@@ -114,8 +114,8 @@ label {
 input, select {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    border: 1px solid #e2e2e2;
+    border-radius: 15px;
     box-sizing: border-box;
     background-color: #fff;
 
@@ -164,7 +164,7 @@ button {
     margin-top: 10px;
 }
 button:disabled, button:disabled:hover {
-    background-color: #b9dbff;
+    background-color: #ffc8b6;
     color: white;
     cursor: not-allowed;
 }
@@ -325,7 +325,7 @@ button:hover {
 
 #language-selector a.active {
     color: rgb(255, 255, 255);
-    background-color: #007BFF;
+    background-color: #FF5722;
     padding: 8px 12px 8px 12px;
     border-radius: 16px;
 }
@@ -334,8 +334,8 @@ button:hover {
     position: relative;
     display: inline-block;
     cursor: pointer;
-    text-decoration: underline dotted #A4C2FA;
-    -webkit-text-decoration: underline dotted #A4C2FA;
+    text-decoration: underline dotted #fabfa4;
+    -webkit-text-decoration: underline dotted #fabfa4;
     text-underline-offset: 3px;
 }
 
