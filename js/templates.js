@@ -252,6 +252,23 @@ vtxtable powerlevels 5
 vtxtable powervalues 25 200 600 1600 2500
 vtxtable powerlabels 25 200 600 1.6 2.5` ;
 
+} else if (template === 'zeus') { 
+    document.getElementById('power-state-1').value = '1';
+    document.getElementById('power-state-2').value = '2';
+    document.getElementById('power-state-3').value = '4';
+    document.getElementById('port-select').value = '0';
+    document.getElementById('protocol-select').value = '2048';
+    document.getElementById('vtxTable').value = `vtxtable bands 5
+vtxtable channels 8
+vtxtable band 1 BOSCAM_A A CUSTOM  5865 5845 5825 5805 5785 5765 5745 5725
+vtxtable band 2 BOSCAM_B B CUSTOM  5733 5752 5771 5790 5809 5828 5847 5866
+vtxtable band 4 FATSHARK F CUSTOM  5740 5760 5780 5800 5820 5840 5860 5880
+vtxtable band 5 RACEBAND R CUSTOM  5658 5695 5732 5769 5806 5843 5880 5917
+vtxtable band 5 RACEBAND R CUSTOM  5362 5399 5436 5473 5510 5547 5584 5621
+vtxtable powerlevels 5
+vtxtable powervalues 25 400 800 1600
+vtxtable powerlabels 25 400 800 1.6` ;
+
 }
 
 }
