@@ -306,6 +306,7 @@ vtxtable powerlabels 25 400 800 1.6 2.5` ;
 
 } 
 
+
 function changeImage() {
     var selectBox = document.getElementById("menu-select");
     var selectedValue = selectBox.options[selectBox.selectedIndex].value;
@@ -329,6 +330,5 @@ function changeImage() {
             break;
     }
 }
-
 
 }
