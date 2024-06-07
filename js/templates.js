@@ -304,10 +304,7 @@ vtxtable powerlevels 5
 vtxtable powervalues 25 100 200 400 600 
 vtxtable powerlabels 25 400 800 1.6 2.5` ;
 
-}
-
-
-if (template === 'akk-img') { 
+} if (template === 'akk-img') { 
     document.getElementById('akk-img').appendChild(image);
     document.getElementById('power-state-1').value = '1';
     document.getElementById('power-state-2').value = '3';
@@ -325,8 +322,8 @@ vtxtable powerlevels 5
 vtxtable powervalues 25 100 200 400 600
 vtxtable powerlabels 25 200 500 1.5 2.5`;
     
-    var image = document.createElement('akk-img');
-    image.src = 'images/akklong.svg'; 
+var image = document.createElement('akk-img');
+image.src = 'images/akklong.svg'; 
 }
 
 
