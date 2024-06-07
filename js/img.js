@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const menuItems = document.querySelectorAll(".menu li");
+    const menuItems = document.querySelectorAll(".template-select");
     const hoverImage = document.getElementById("hover-image");
 
     menuItems.forEach(item => {
