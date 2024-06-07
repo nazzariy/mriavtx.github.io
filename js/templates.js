@@ -237,8 +237,8 @@ vtxtable powerlabels 250 500 1000 2000`;
 
 } else if (template === 'geprcrad') { 
     document.getElementById('power-state-1').value = '1';
-    document.getElementById('power-state-2').value = '2';
-    document.getElementById('power-state-3').value = '4';
+    document.getElementById('power-state-2').value = '3';
+    document.getElementById('power-state-3').value = '5';
     document.getElementById('port-select').value = '0';
     document.getElementById('protocol-select').value = '8192';
     document.getElementById('vtxTable').value = `vtxtable bands 5
@@ -251,7 +251,5 @@ vtxtable band 5 RACEBAND R CUSTOM  5658 5695 5732 5769 5806 5843 5880 5917
 vtxtable powerlevels 5
 vtxtable powervalues 25 200 600 1600 2500
 vtxtable powerlabels 25 200 600 1.6 2.5
-
-}
 
 }
