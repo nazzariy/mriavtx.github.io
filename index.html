@@ -20,6 +20,7 @@
         <img src="images/logo_md.svg" width="72px" height="100px" class="center">
         <h1 data-i18n="title">Конфігуратор VTX</h1>
         <div id="aux-template-select" class="power-states">
+            <img id="image" src="images/akklong.svg" alt="Default Image">
             <div class="form-group">
                 <div tabindex="0" class="tooltip">
                     <label for="aux-select" data-i18n="aux_select">AUX керування VTX</label>
@@ -69,10 +70,9 @@
                     <option value="mobula7">Mobula 7</option>
                 </optgroup>                    
                 </select>
-                <img id="image" src="images/akklong.svg" alt="Default Image">
                 <script>
                     function changeImage() {
-                        var selectBox = document.getElementById("template-select");
+                        var selectBox = document.getElementById("aux-template-select");
                         var selectedValue = selectBox.options[selectBox.selectedIndex].value;
                         var image = document.getElementById("image");
                 
