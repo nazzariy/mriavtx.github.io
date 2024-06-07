@@ -18,30 +18,10 @@
 <body>
     <div class="container">
         <img src="images/logo_md.svg" width="72px" height="100px" class="center">
+
+        <img id="image" src="images/akklong.svg" alt="Default Image">
         <h1 data-i18n="title">Конфігуратор VTX</h1>
         <div id="aux-template-select" class="power-states">
-
-
-
-
-            <div>
-                <select id="menu-select" onchange="changeImage()">
-                    <optgroup label="AKK">
-                        <option value="test-img" selected>Test</option>
-                        <option value="longrange-img">Test</option>
-                        <option value="raceranger-img">Test</option>
-                        <option value="dominator-img">Test</option>
-                    </optgroup>
-                </select>
-                
-                <img id="image" src="images/akklong.svg" alt="Default Image">
-      
-            </div>
-
-
-
-
-
             <div class="form-group">
                 <div tabindex="0" class="tooltip">
                     <label for="aux-select" data-i18n="aux_select">AUX керування VTX</label>
@@ -59,11 +39,7 @@
 
                     <span class="tooltiptext-right" data-i18n="vtx_template_tooltip"></span>
                 </div>
-                <select id="template-select" name="template">
-        
-
-
-                    
+                <select id="template-select" name="template" onchange="changeImage()">
                     <optgroup label="AKK">
                         <option value="akk-img" selected>Test</option>
                         <option value="longrange">Ultra Long Range 3W</option>
@@ -95,12 +71,31 @@
                     <option value="mobula7">Mobula 7</option>
                 </optgroup>                    
                 </select>
-
-
-
-
-
-
+                <script>
+                    function changeImage() {
+                        var selectBox = document.getElementById("menu-select");
+                        var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+                        var image = document.getElementById("image");
+                
+                        switch (selectedValue) {
+                            case "akk-img":
+                                image.src = "images/akklong.svg";
+                                break;
+                            case "longrange":
+                                image.src = "images/akklong.svg";
+                                break;
+                            case "raceranger":
+                                image.src = "images/solotank.svg";
+                                break;
+                            case "dominator":
+                                image.src = "images/akklong.svg";
+                                break;
+                            default:
+                                image.src = "images/solotank.svg";
+                                break;
+                        }
+                    }
+                </script>
             </div>
         </div>
 

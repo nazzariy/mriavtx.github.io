@@ -306,29 +306,4 @@ vtxtable powerlabels 25 400 800 1.6 2.5` ;
 
 } 
 
-
-function changeImage() {
-    var selectBox = document.getElementById("menu-select");
-    var selectedValue = selectBox.options[selectBox.selectedIndex].value;
-    var image = document.getElementById("image");
-
-    switch (selectedValue) {
-        case "test-img":
-            image.src = "images/akklong.svg";
-            break;
-        case "longrange-img":
-            image.src = "images/akklong.svg";
-            break;
-        case "raceranger-img":
-            image.src = "images/solotank.svg";
-            break;
-        case "dominator-img":
-            image.src = "images/akklong.svg";
-            break;
-        default:
-            image.src = "images/solotank.svg";
-            break;
-    }
-}
-
 }
