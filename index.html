@@ -20,6 +20,53 @@
         <img src="images/logo_md.svg" width="72px" height="100px" class="center">
         <h1 data-i18n="title">Конфігуратор VTX</h1>
         <div id="aux-template-select" class="power-states">
+
+
+
+            
+            <div>
+                <select id="menu-select" onchange="changeImage()">
+                    <optgroup label="AKK">
+                        <option value="test-img" selected>Test</option>
+                        <option value="longrange-img">Ultra Long Range 3W</option>
+                        <option value="raceranger-img">Race Ranger 1.6W</option>
+                        <option value="dominator-img">FX2-Dominator 2W</option>
+                    </optgroup>
+                </select>
+                
+                <img id="image" src="images/akklong.svg" alt="Default Image">
+                
+                <script>
+                    function changeImage() {
+                        var selectBox = document.getElementById("menu-select");
+                        var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+                        var image = document.getElementById("image");
+                
+                        switch (selectedValue) {
+                            case "test-img":
+                                image.src = "images/akklong.svg";
+                                break;
+                            case "longrange-img":
+                                image.src = "images/akklong.svg";
+                                break;
+                            case "raceranger-img":
+                                image.src = "images/akklong.svg";
+                                break;
+                            case "dominator-img":
+                                image.src = "images/akklong.svg";
+                                break;
+                            default:
+                                image.src = "images/akklong.svg";
+                                break;
+                        }
+                    }
+                </script>      
+            </div>
+
+
+
+
+
             <div class="form-group">
                 <div tabindex="0" class="tooltip">
                     <label for="aux-select" data-i18n="aux_select">AUX керування VTX</label>
@@ -38,44 +85,10 @@
                     <span class="tooltiptext-right" data-i18n="vtx_template_tooltip"></span>
                 </div>
                 <select id="template-select" name="template">
-                    <select id="menu-select" onchange="changeImage()">
-                        <optgroup label="AKK">
-                            <option value="test-img" selected>Test</option>
-                            <option value="longrange-img">Ultra Long Range 3W</option>
-                            <option value="raceranger-img">Race Ranger 1.6W</option>
-                            <option value="dominator-img">FX2-Dominator 2W</option>
-                        </optgroup>
-                    </select>
-                    
-                    <img id="image" src="images/akklong.svg" alt="Default Image">
-                    
-                    <script>
-                        function changeImage() {
-                            var selectBox = document.getElementById("menu-select");
-                            var selectedValue = selectBox.options[selectBox.selectedIndex].value;
-                            var image = document.getElementById("image");
-                    
-                            switch (selectedValue) {
-                                case "test-img":
-                                    image.src = "images/akklong.svg";
-                                    break;
-                                case "longrange-img":
-                                    image.src = "images/akklong.svg";
-                                    break;
-                                case "raceranger-img":
-                                    image.src = "images/akklong.svg";
-                                    break;
-                                case "dominator-img":
-                                    image.src = "images/akklong.svg";
-                                    break;
-                                default:
-                                    image.src = "images/akklong.svg";
-                                    break;
-                            }
-                        }
-                    </script>              
+        
 
 
+                    
                     <optgroup label="AKK">
                         <option value="akk-img" selected>Test</option>
                         <option value="longrange">Ultra Long Range 3W</option>
