@@ -37,9 +37,14 @@
 
                     <span class="tooltiptext-right" data-i18n="vtx_template_tooltip"></span>
                 </div>
-                <select id="template-select" name="template" onchange="changeImage()">
+
+
+
+
+
+                <select id="template-select" name="template">
                     <optgroup label="AKK">
-                        <option value="longrange">Ultra Long Range 3W</option>
+                        <option value="longrange" selected>Ultra Long Range 3W</option>
                         <option value="raceranger">Race Ranger 1.6W</option>
                         <option value="dominator">FX2-Dominator 2W</option>
                     </optgroup>  
@@ -68,44 +73,12 @@
                     <option value="mobula7">Mobula 7</option>
                 </optgroup>                    
                 </select>
-                <img id="image" src="images/akklong.svg">
-                <script>
-                    function changeImage() {
-                        var selectBox = document.getElementById("template-select");
-                        var selectedValue = selectBox.options[selectBox.selectedIndex].value;
-                        var image = document.getElementById("image");
-                
-                        switch (selectedValue) {
-                            case "longrange":
-                                image.src = "images/akklong.svg";
-                                break;
-                            case "raceranger":
-                                image.src = "images/akkrr.svg";
-                                break;
-                            case "reaper":
-                                image.src = "images/foxer40.svg";
-                                break;
-                            case "reaper2":
-                                image.src = "images/reaper2.svg";
-                                break;
-                            case "infinity":
-                                image.src = "images/infinity.svg";
-                                break;
-                            case "solo":
-                                image.src = "images/solomax.svg";
-                                break;
-                            case "tank":
-                                image.src = "images/tank.svg";
-                                break;
-                            case "geprcrad":
-                                image.src = "images/akkdominator.svg";
-                                break;
-                            default:
-                                image.src = "images/akklong.svg";
-                                break;
-                        }
-                    }
-                </script>
+
+
+
+
+
+
             </div>
         </div>
 
