@@ -382,3 +382,16 @@ button:hover {
     visibility: visible;
     opacity: 0.95;
 }
+
+
+
+
+#hover-image {
+    position: absolute;
+    display: none;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #ccc;
+}
